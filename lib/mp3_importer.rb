@@ -15,8 +15,8 @@ class MP3Importer
     files
   end
   
-  def import 
-    Song.new_by_filename(some_filename)
+  def import(name) 
+    Song.new_by_filename(name)
   end 
   
   
