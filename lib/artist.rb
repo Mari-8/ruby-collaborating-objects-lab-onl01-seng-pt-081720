@@ -54,9 +54,9 @@ class Artist
     artist
   end
  
-  def print_songs
-    artist_songs = []
-    Song.all.collect {|song| song.artist == self}
-  end 
+   def print_songs 
+    self.songs.each {|song| song.name}
+  end
+end
   
 end
