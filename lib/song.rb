@@ -29,6 +29,10 @@ class Song
       self.artist.name = name
     end
   end
+  
+  def self.new_by_filename
+    
+  end 
 
 
 end
