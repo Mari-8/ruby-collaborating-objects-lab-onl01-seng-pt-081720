@@ -30,12 +30,12 @@ class Song
     end
   end
   
-    def self.new_by_filename(file)
+   def self.new_by_filename(file)
     song_inf = file.chomp(".mp3").split(" - ")
     song = Song.new(song_inf[1])
     song.artist_name = song_inf[0]
     song
-  end
+   end
 
 
 
