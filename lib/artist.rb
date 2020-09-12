@@ -38,7 +38,8 @@ class Artist
   end 
 
   def self.find_or_create_by_name(name)
-    Song.all.find_by_name(name) || self.create_by_name(name)
+    songs = Song.all
+    songs.find_by_name(name) || self.create_by_name(name)
   end
  
  
